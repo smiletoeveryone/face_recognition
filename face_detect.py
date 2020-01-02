@@ -4,13 +4,13 @@ import time
 
 # Get user supplied values
 # imagePath = sys.argv[0]
-cascPath = "/home/fiftycentsjj/Downloads/raspberry_beginner_lecture/robot_race/FaceDetect-master/haarcascade_frontalface_default.xml"
+cascPath = "path of xml"
 
 # Create the haar cascade
 faceCascade = cv2.CascadeClassifier(cascPath)
 
 # Read the image
-path = "/home/fiftycentsjj/Downloads/raspberry_beginner_lecture/robot_race/little_mix_right.jpg"
+path = "path of jpg or png"
 image = cv2.imread(path)
 hsv_image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV) # read the image with hsv
 cv2.imshow("image", image)
