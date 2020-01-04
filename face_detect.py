@@ -9,7 +9,7 @@ cascPath = "path of xml"
 # Create the haar cascade
 faceCascade = cv2.CascadeClassifier(cascPath)
 
-# Read the image
+# Read the image, the pixel should be 640*480
 path = "path of jpg or png"
 image = cv2.imread(path)
 hsv_image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV) # read the image with hsv
